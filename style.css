@@ -1,0 +1,92 @@
+body{
+    text-align: center;
+    background-color: rgb(5, 33, 74);
+}
+
+h1{
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Press Start 2P', cursive;
+    color: wheat;
+}
+.game-space{
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.box-1{
+    display: flex;
+    margin: 1%;
+}
+
+.box-2{
+    display: flex;
+    margin: 1%;
+}
+
+.green{
+    padding: 60px;
+    border: solid 10px black;
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: green;
+    margin: 1%;
+}
+
+.red{
+    padding: 60px;
+    border: solid 10px black;
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: red;
+    margin: 1%;
+}
+
+.yellow{
+    padding: 60px;
+    border: solid 10px black;
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: yellow;
+    margin: 1%;
+}
+
+.blue{
+    padding: 60px;
+    border: solid 10px black;
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: blue;
+    margin: 1%;
+}
+
+.glow{
+    border: rgba(255, 255, 255, 0.478);
+    transform: scale(1.05);
+}
+
+.wrong{
+    background-color: rgb(144, 0, 0);
+}
+
+@media only screen and (max-width:600px) {
+    h1{
+        font-size: medium;
+        margin-top: 40%;
+    }
+
+    .game-space{
+        margin-top: 10%;
+        margin-left: 0;
+    }
+
+    .red .green .yellow .blue{
+        height: 35px;
+        width: 35px;
+        padding: 35px;
+    }
+}
