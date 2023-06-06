@@ -5,12 +5,16 @@ var score = 0;
 
 var player_name = prompt("Enter your name");
 
-$(document).keypress(function(){
+$(document).on("touchstart keypress",function(){
+    ready();
+});
+
+function ready(){
     $("body").removeClass("wrong");
     if(level==0){
         start(++level);
     }
-});
+}
 
 var music = ["music/green.mp3","music/blue.mp3","music/yellow.mp3","music/red.mp3"];
 
