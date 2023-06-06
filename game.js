@@ -51,7 +51,7 @@ function gameON(level){
 function blinkPattern(pattern){
     console.log(pattern);
     for(var i=0;i<pattern.length;i++){
-        setTimeout(soundAndAnimation, i*1000, pattern[i]);
+        setTimeout(soundAndAnimation, i*800, pattern[i]);
     }
 }
 
